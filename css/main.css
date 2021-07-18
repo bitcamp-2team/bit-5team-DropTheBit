@@ -1,0 +1,52 @@
+
+/***********************/
+#cp2 .line{
+	clear:both;
+	height:750px;
+}
+#cp2 .line .content{
+	float:left;width:25%;height:100%;
+	padding:1.5% 2.5% 0 2.5%;
+}
+#cp2 .line .content img{
+	max-width:100%;
+}
+#cp2 .line .gray{
+	float:left;width:25%;height:100%;
+	font-size:13px;line-height:18px;color:#ebeaea;
+	background-position:center;background-size:cover;
+}
+#cp2 .line .gray dt{
+	text-align:left;
+	padding:0 10%;
+}
+#cp2 .line .cell{
+	float:left;width:25%;height:50%;
+	background-position:center;background-size:cover;
+}
+#cp2 .linkLine a{
+	display:block;
+	font-size:13px;line-height:28px;color:#a7a8a8;
+	font-family: 'Noto Sans','Nanum Gothic', serif !important;
+	border-top:1px solid #d8d8d8;
+}
+#cp2 .linkLine a:hover{
+	color:#1d1d1d;
+}
+#cp2 .linkLine a:last-child{
+	border-bottom:1px solid #d8d8d8;
+}
+/* 180802 동영상추가 */
+#cp2 .line .movieWrap {
+	float: left;
+	width: 75%; height: 100%;
+	background-image: url(../img/main/cpMbg.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+}
+#cp2 .line .movieWrap iframe {
+	width: 92%; height: 100%;
+	margin: auto;
+}
+/*********************************/
