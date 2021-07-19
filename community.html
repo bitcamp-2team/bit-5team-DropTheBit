@@ -7,18 +7,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DROP THE BIT</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href = "css/header.css">
+  <link rel="stylesheet" href = "css/LayerPopup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/font/NanumGothic-Bold.eot#iefix">
   <link rel="stylesheet" href="/css/community.css">
-  <link rel="stylesheet" href="/css/common.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 </head>
 
 <body>
+  <!-- HEADER -->
+<header>
+  <div class = "header">
+    <!--logo-->
+    <a href="index.html" class = "logo">
+      <img src = "img/logo.png" alt = "로고이미지">
+    </a> 
+    <!--logo-->
+
+    <!--rightmenu-->
+    <div class = rightmenu>
+      <ul>
+        <li><a href = "#">LOGIN</a></li>
+        <li><a href = "#">APP 다운로드</a></li>
+        <li><a href = "#">예약확인</a></li>
+      </ul>
+    </div> 
+    <!--rightmenu-->
+
+    <!-- centermenu -->
+    <div class = "centermenu">
+      <ul>
+        <li class = "menu1"><a href = "roomlist.html" >ROOM</a></li>
+        <li class = "menu2"><a href = "reservation.html" >RESERVATION</a></li>
+        <li class = "menu3"><a href = "community.html" >COMMUNITY</a></li>
+        <li class = "menu4"><a href = "promotions.html" >PROMOTION</a></li>
+      </ul>
+    </div> 
+    <!-- centermenu -->
+  </div> <!--header-->
+
+    <!-- Layer Popup -->
+    <div id = "layer">
+      <img src = "img/logo.png">
+      <a href = "#" class = "close">Close</a>
+    </div>
+    <!-- Layer Popup -->
+</header>  
   <div class="wrap">
-    <header>헤더</header>
     <!-- page-info -->
-    <section class="community-page-info" style="background-image: url(./images-community/석양.jpg);">
+    <section class="community-page-info" style="background-image: url(./img/community/석양.jpg);">
       <div class="community-title">Commmunity</div>
       <div class="community-sub-title">BIT CLUB</div>
       <div class="community-description1">We hope you will enjoy the taste, <br>and memories of the area filled with
@@ -48,8 +91,8 @@
       <div class="review-list-con">
         <ul class="review-list">
           <li class="review-item">
-            <figure class="review-image" style="background-image: url(/images-community/후기1.webp);">
-              <img src="/images-community/후기1.jpg" alt="사진">
+            <figure class="review-image" style="background-image: url(/img/community/후기1.webp);">
+              <img src="/img/community/후기1.jpg" alt="사진">
             </figure>
             <div class="review-info">
               <div class="review-title">정말 좋아용 <b class="star">⭐x5</b></div>
@@ -59,8 +102,8 @@
             </div>
           </li>
           <li class="review-item">
-            <figure class="review-image" style="background-image: url(/images-community/후기2.webp);">
-              <img src="/images-community/후기2.webp" alt="사진">
+            <figure class="review-image" style="background-image: url(/img/community/후기2.webp);">
+              <img src="/img/community/후기2.webp" alt="사진">
             </figure>
             <div class="review-info">
               <div class="review-title">가격대비 괜찮네여<b class="star">⭐x3</b></div>
@@ -68,8 +111,8 @@
             </div>
           </li>
           <li class="review-item">
-            <figure class="review-image" style="background-image: url(/images-community/후기3.jpg);">
-              <img src="/images-community/후기3.jpg" alt="사진">
+            <figure class="review-image" style="background-image: url(/img/community/후기3.jpg);">
+              <img src="/img/community/후기3.jpg" alt="사진">
             </figure>
             <div class="review-info">
               <div class="review-title">풀 빌라 최고<b class="star">⭐x5</b></div>
@@ -80,8 +123,8 @@
             </div>
           </li>
           <li class="review-item">
-            <figure class="review-image" style="background-image: url(/images-community/후기4.jpg);">
-              <img src="/images-community/후기4.jpg" alt="사진">
+            <figure class="review-image" style="background-image: url(/img/community/후기4.jpg);">
+              <img src="/img/community/후기4.jpg" alt="사진">
             </figure>
             <div class="review-info">
               <div class="review-title">드라마 촬영장인줄<b class="star">⭐x5</b></div>
@@ -89,8 +132,8 @@
             </div>
           </li>
           <li class="review-item">
-            <figure class="review-image" style="background-image: url(/images-community/후기5.jpg);">
-              <img src="/images-community/후기5.jpg" alt="사진">
+            <figure class="review-image" style="background-image: url(/img/community/후기5.jpg);">
+              <img src="/img/community/후기5.jpg" alt="사진">
             </figure>
             <div class="review-info">
               <div class="review-title">겉모습만 화려...<b class="star">⭐x1</b></div>
@@ -100,8 +143,8 @@
             </div>
           </li>
           <li class="review-item">
-            <figure class="review-image" style="background-image: url(/images-community/후기6.jpg);">
-              <img src="/images-community/후기6.jpg" alt="사진">
+            <figure class="review-image" style="background-image: url(/img/community/후기6.jpg);">
+              <img src="/img/community/후기6.jpg" alt="사진">
             </figure>
             <div class="review-info">
               <div class="review-title">깔끔<b class="star">⭐x4</b></div>
@@ -122,8 +165,8 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <li class="review-item best">
-            <figure class="review-image" style="background-image: url(/images-community/후기1.webp);">
-              <img src="/images-community/후기1.jpg" alt="사진">
+            <figure class="review-image" style="background-image: url(/img/community/후기1.webp);">
+              <img src="/img/community/후기1.jpg" alt="사진">
             </figure>
             <div class="review-info">
               <div class="review-title">정말 좋아용 <b class="star">⭐x5</b></div>
@@ -135,8 +178,8 @@
         </div>
         <div class="swiper-slide">
           <li class="review-item best">
-            <figure class="review-image" style="background-image: url(/images-community/후기3.jpg);">
-              <img src="/images-community/후기3.jpg" alt="사진">
+            <figure class="review-image" style="background-image: url(/img/community/후기3.jpg);">
+              <img src="/img/community/후기3.jpg" alt="사진">
             </figure>
             <div class="review-info">
               <div class="review-title">풀 빌라 최고<b class="star">⭐x5</b></div>
@@ -149,8 +192,8 @@
         </div>
         <div class="swiper-slide">
           <li class="review-item best">
-            <figure class="review-image" style="background-image: url(/images-community/후기4.jpg);">
-              <img src="/images-community/후기4.jpg" alt="사진">
+            <figure class="review-image" style="background-image: url(/img/community/후기4.jpg);">
+              <img src="/img/community/후기4.jpg" alt="사진">
             </figure>
             <div class="review-info">
               <div class="review-title">드라마 촬영장인줄<b class="star">⭐x5</b></div>
@@ -181,9 +224,104 @@
       });
     </script>
 
-
   </div>
-  <footer></footer>
+<!-- FOOTER -->
+<footer>
+  <div class = "footer">
+    <!--farea-->
+    <div class = "farea">
+      <ul>
+        <div style = "color : hotpink">
+          <i class="fab fa-instagram fa-3x fa-spin"></i>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;
+        <div style = "color : blue">
+          <i class = "fab fa-facebook-square fa-3x fa-spin"></i>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;
+        <div style = "color : green">
+          <i class = "fab fa-line fa-3x fa-spin"></i>
+        </div>
+      </ul>    
+    </div> <!--farea-->  
+
+    <div class = "nav">
+        <!--time-->
+        <div class = "time">
+          <strong><a>TIME IN SERVICE (식사시간시 미운영)</a></strong><br><br>
+          <span class = "csTit">고객센터</span>
+          <span class = "csTxt">AM 09 : 00 ~ 20 : 00</span><br>
+          <span class = "csTit">점심시간</span>
+          <span class = "csTxt">PM 12 : 00 ~ 13 : 00</span><br>
+          <span class = "csTit">저녁시간</span>
+          <span class = "csTxt">PM 17 : 00 ~ 18 : 00</span><br><br>
+        </div><!--time-->
+
+        <!--promotion--> 
+        <div class = "promotion">
+          <strong><a href = "#">PROMOTION</a></strong>
+          <ul>
+            <li><a href = "promotions.html" target = "_blank">Promotion&Package</li>
+            <li><a href = "promotions.html" target = "_blank">Event</a></li>
+          </ul>
+          <strong><a href = "#">RESERVATION</a></strong>
+          <ul><li>Reservation</li></ul>
+        </div> <!--promotion-->
+
+        <!--account-->
+        <div class = "account">
+          <strong><a>ACCOUNT (예금주 : 남승옥)</a></strong><br><br>
+          <span class = "csTit">국민은행</span>
+          <span class = "csTxt">1234 5678 0000</span><br>
+          <span class = "csTit">농협은행</span>
+          <span class = "csTxt">9876 5432 1000</span><br>
+          <span class = "csTit">기업은행</span>
+          <span class = "csTxt">5555 4444 9999</span><br>
+          <span class = "csTit">우리은행</span>
+          <span class = "csTxt">7774 6548 7894</span><br>
+        </div> <!--account-->
+
+        <!--contact-->
+        <div class = "contact">
+          <strong><a>CONTACT</a></strong><br><br>
+          <span class = "csTit">대표전화</span>
+          <span class = "csTxt">010 3386 7124</span><br>
+          <span class = "csTit">팩스</span>
+          <span class = "csTxt">010 3386 7124</span><br>
+          <span class = "csTit">당직 지배인</span>
+          <span class = "csTxt">010 3386 7124</span><br>
+          <span class = "csTit">고객센터</span>
+          <span class = "csTxt">010 3386 7124</span><br>
+        </div> <!--contact-->
+    </div> <!--nav-->
+
+    <!--btm-->
+    <div class = "btm">
+      <div class = "footerMenu">
+        <ul class = "menuBox">
+          <li><a href = "#" class = "a">공지사항 |</a></li>
+          <li><a href = "#" class = "b">개인정보 처리방침 |</a></li>
+          <li><a href = "#" class = "c">예약취소에 따른 위약금 규정</a></li>
+        </ul>
+      </div> <!--fotterMenu-->
+
+      <div class = "info">
+        <div>
+          호텔명 <strong style = "margin-right : 15px;">비트캠프</strong>
+          주소 <strong style = "margin-right : 15px;">서울특별시 강남구 강남대로94길 20 삼오빌딩 5-9층</strong>
+          대표자명 <strong style = "margin-right : 15px;">남승옥</strong>
+          이메일 <strong style = "margin-right : 15px;">qqkddi09@naver.com</strong><br>
+        </div>
+        <div class = "info2">
+          사업자등록번호 <strong style = "margin-right : 15px;">229-88-1111</strong>
+          통신판매업신고번호 <strong>제2017-충북제천-0024호</strong>
+        </div>
+      </div> <!--info-->
+    </div> <!--btm-->
+  </div> <!--footter-->
+</footer>
+
+<!-- Layer Popup-->
+<script src = "js/APP.js"></script>
+<!-- Layer Popup -->
 </body>
 
 </html>

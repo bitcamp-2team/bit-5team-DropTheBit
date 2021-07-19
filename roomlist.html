@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/LayerPopup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/default2.css">
+  <link type="text/css" rel="stylesheet" href="css/room.css">
+  <link type="text/css" rel="stylesheet" href="css/common.css">
+
+  <title>DROP THE BIT </title>
+</head>
+
+<body>
+  <style>
+    .navi_top {
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      font-size: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .menu_area {
+      text-align: center;
+    }
+
+    .menu_area li {
+      position: relative;
+      vertical-align: middle;
+      display: inline-block;
+      *display: inline;
+    }
+
+    .menu_area .bigMenu {
+      display: block;
+      padding: 0 20px;
+      font-size: 14px;
+      color: #d7d7d7;
+      font-family: 'Noto Sans', 'Nanum Gothic', serif !important;
+    }
+
+    .menu_area li:hover .bigMenu {
+      color: #ffffff;
+    }
+
+    .menu_area .sub {
+      visibility: hidden;
+      opacity: 0;
+      display: table;
+      table-layout: fixed;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      -ms-transform: translate(-50%);
+      -webkit-transform: translate(-50%);
+
+      top: 100%;
+      padding: 10px 50px;
+      font-size: 13px;
+      color: #d7d7d7;
+      line-height: 0px;
+      background: rgba(0, 0, 0, 0.4) url(./images/subNaviOver.png) no-repeat center top;
+      transition: opacity 0.3s ease-out, visibility 0.3s ease-out, line-height 0.3s ease-out;
+    }
+
+    .menu_area li:hover .sub {
+      visibility: visible;
+      opacity: 1;
+      line-height: 30px;
+    }
+
+    .menu_area .sub dl {
+      display: table-row;
+    }
+
+    .menu_area .sub dt {
+      display: table-cell;
+    }
+
+    .menu_area .sub dt a {
+      white-space: nowrap;
+      word-break: break-all;
+      display: inline-block;
+    }
+
+    .menu_area .sub dt a:hover {
+      color: #fff;
+    }
+
+    /* 우측버튼 */
+    .navi_top .logo {
+      margin-right: 30px;
+    }
+
+    .navi_top .rightBtns {
+      margin-left: 30px;
+    }
+
+    .navi_top .rightBtns a {
+      display: inline-block;
+      vertical-align: middle;
+      width: 50px;
+      height: 50px;
+      margin: 0 10px;
+      background-repeat: no-repeat;
+    }
+
+    .navi_top .rightBtns .Btnhover:hover {
+      background-position-y: -100px
+    }
+
+    /* 풀페이지 버튼 */
+    .navi_top .fullscreen_btn {
+      background: url(./images/fullBtn_set.png) no-repeat center top;
+    }
+
+    .navi_top .fullscreen_btn.FULL {
+      background-image: url(./images/fullBtn_exit.png);
+    }
+
+
+    /*200916 - 인스타&blog 버튼 추가    */
+    .head-btn {
+      width: 50px;
+      height: 50px;
+    }
+
+    .head-btn.type-insta {
+      background: url('./image/insta-icon.png')no-repeat center center/50px 50px;
+    }
+
+    .head-btn.type-blog {
+      background: url('./image/blog-icon.png')no-repeat center center/50px 50px
+    }
+  </style>
+  <!-- HEADER -->
+  <header>
+    <div class="header">
+      <!--logo-->
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="로고이미지">
+      </a>
+      <!--logo-->
+
+      <!--rightmenu-->
+      <div class=rightmenu>
+        <ul>
+          <li><a href="#">LOGIN</a></li>
+          <li><a href="#">APP 다운로드</a></li>
+          <li><a href="#">예약확인</a></li>
+        </ul>
+      </div>
+      <!--rightmenu-->
+
+      <!-- centermenu -->
+      <div class="centermenu">
+        <ul>
+          <li class="menu1"><a href="roomlist.html">ROOM</a></li>
+          <li class="menu2"><a href="reservation.html">RESERVATION</a></li>
+          <li class="menu3"><a href="community.html">COMMUNITY</a></li>
+          <li class="menu4"><a href="promotions.html">PROMOTION</a></li>
+        </ul>
+      </div>
+      <!-- centermenu -->
+    </div>
+    <!--header-->
+
+    <!-- Layer Popup -->
+    <div id="layer">
+      <img src="img/logo.png">
+      <a href="#" class="close">Close</a>
+    </div>
+    <!-- Layer Popup -->
+  </header>
+  <link type="text/css" rel="stylesheet" charset="utf-8" href="css/rooms.css">
+  <style>
+    #rooms {
+      padding-top: 150px;
+    }
+
+    .txtBox {
+      color: #000;
+      padding: 10px 30px;
+      border: 2px solid #000;
+
+    }
+
+    .txtBox:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    .mapWrap {
+      visibility: hidden;
+      position: absolute;
+      z-index: 100;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: -28%;
+      margin: auto;
+    }
+
+    .mapWrap img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      max-width: 900px;
+      width: 90%;
+    }
+  </style>
+  <div class="all_wrap clear">
+    <div class="cpage preView" id="rooms">
+      <div class="mapWrap">
+        <img src="image/roomsbg.jpg" class="preMap" usemap="#preMap" width="900" style="width:212px;">
+        <map name="preMap" id="preMap">
+          <area alt title onclick="$('.mapWrapa').toggleClass('VIEW')" shape="poly"
+            coords="181,10,181,28,202,28,199,10">
+          <area alt title href="room.php?menutree idx=15378" shape="poly" coords="60,36,68,30,73,34,66,42">
+          <area alt title href="room.php?menutree idx=15379" shape="poly" coords="69,41,77,33,82,36,73,45">
+          <area alt title href="room.php?menutree idx=15380" shape="poly" coords="76,45,85,36,91,40,82,49">
+          <area alt title href="room.php?menutree idx=15381" shape="poly" coords="84,49,95,39,102,44,91,55">
+          <area alt title href="room.php?menutree idx=15382" shape="poly" coords="94,55,105,43,113,48,102,59">
+          <area alt title href="room.php?menutree idx=15383" shape="poly" coords="105,61,116,48,125,53,114,64">
+          <area alt title href="room.php?menutree idx=20052" shape="poly" coords="108,111,108,123,120,125,123,115">
+          <area alt title href="room.php?menutree idx=20053" shape="poly" coords="95,129,105,124,114,134,105,139">
+          <area alt title href="room.php?menutree idx=20054" shape="poly" coords="83,144,93,137,103,149,93,153">
+          <area alt title href="room.php?menutree idx=20055" shape="poly" coords="73,160,83,152,93,162,83,168">
+          <area alt title href="room.php?menutree idx=20056" shape="poly" coords="62,174,72,166,83,176,74,182">
+          <area alt title href="room.php?menutree idx=20057" shape="poly" coords="52,188,62,179,73,190,64,199">
+          <area alt title href="room.php?menutree idx=18925" shape="poly" coords="42,203,52,194,64,205,55,214">
+          <area alt title href="room.php?menutree idx=17190" shape="poly" coords="58,104,73,95,83,111,70,119">
+          <area alt title href="room.php?menutree idx=24869" shape="poly" coords="53,133,69,121,77,135,67,145">
+
+        </map>
+      </div>
+
+      <img src="image/room preview.PNG">
+
+
+      <br>
+      <br>
+      <br>
+
+      <div class="wrapMax clear">
+        <a href="./room.html">
+          <div class="paper">
+            <div class="loader" style="background-image:url(image/사진1.PNG);"></div>
+            <h6>풀빌라_01</h6>
+            개별 전용풀장, 커플전용, 전용 데크, 제트스파(청풍호 전망), 야외전용 프라이빗 테라스 & 가든(바비큐장)
+          </div>
+        </a>
+
+        <a href="./room.html">
+          <div class="paper">
+            <div class="loader" style="background-image:url(image/사진2.PNG);"></div>
+            <h6>SPA_01</h6>
+            개별 전용풀장, 커플전용, 전용 데크, 제트스파(청풍호 전망), 야외전용 프라이빗 테라스 & 가든(바비큐장)
+          </div>
+        </a>
+
+        <a href="./room.html">
+          <div class="paper clear">
+            <div class="loader" style="background-image:url(image/사진3.PNG);"></div>
+            <h6>Family_01</h6>
+            커플형, 가족형, 야외전용 프라이빗 테라스& 가든(바비큐장 겸용),대형 7인용 제트스파(청풍호전망)
+            <br>
+
+          </div>
+
+        </a>
+         
+
+</body>
+
+</html>

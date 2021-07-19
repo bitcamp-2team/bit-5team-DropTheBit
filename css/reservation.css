@@ -1,0 +1,83 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+html {
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+            font-family: 'Nanum Gothic', sans-serif;
+}
+body {
+            background-repeat:no-repeat;
+            background-position:center top;
+            background-color:rgb(146, 146, 146);
+	font-size:13px;
+	letter-spacing:normal;
+	-webkit-text-size-adjust:none
+}
+img {
+            border:0px;
+            vertical-align:middle;
+            outline:none
+}
+.section {
+            width:1000px;
+            height:auto;
+            margin:auto;
+}
+.submenu {
+            display:block;
+            margin:auto;
+            width:100%;
+            text-align:center;
+            font-size:0;
+}
+.submenu a {        
+            width:auto;     
+            padding:10px 45px;
+            font-size:12px;
+            line-height:35px;
+            color:#1b1b1b;
+            border:1px solid #d3ccc3;
+            height:auto;
+            margin:auto;  
+            text-decoration:none;
+            cursor:pointer;
+            color:inherit;
+}
+.submenu a.sel, .submenu a:hover {
+            background:#364656;
+            color:#fff;
+}
+
+    
+    
+        .b_title {
+            height:35px;
+            width:100%;
+            margin:80px auto 20px;
+            background-repeat:no-repeat;
+        }
+        .content {
+            text-align:left;
+            padding:10px 30px;
+            line-height:22px;
+            width:100%;
+	        color: #444;
+        }
+
+        p {
+        	margin:5px 0px;
+        }
+        b {
+            font-weight:bold;
+        }
+        strong, b {
+            font-weight:bolder;
+        }
+
+        .refund th, .refund td {
+            padding:10px 0;
+            border:1px solid #d3ccc3;
+            background-color:#fcfcfc;
+            text-align:center;
+            font-weight:normal;
+        }

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>DROP THE BIT</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href = "css/header.css">
+  <link rel="stylesheet" href = "css/LayerPopup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/full.css">
+  <link type="text/css" rel="stylesheet" href="css/default2.css">
+  <link type="text/css" rel="stylesheet" href="css/room.css">
+  <link type="text/css" rel="stylesheet" href="css/common.css">
+  <style>
+    .arrowBR, .arrowBL{z-index:30;}
+    .sloganWrap{
+      position:absolute;z-index:20;
+      bottom:100px;
+      width:100%;
+      text-align:center;
+      transition:bottom 0.5s,margin-bottom 0.5s;
+    }
+    .INFO.sloganWrap{
+      bottom:100%;
+      margin-bottom:-287px;
+    }
+    .sloganBox{
+      position:relative;
+      z-index:5;
+      display:inline-block;
+      height:167px;
+      padding:20px 35px 0 35px;
+      font-size:14px;line-height:14px;color:#fff;
+    }
+    .sloganBox::before{
+      content:url();display:block;
+      position:absolute;z-index: -1;top:0;
+      left:0;
+    }
+    .sloganBox::after{
+      content:url();display:block;
+      position:absolute;z-index: -1;top:0;
+      right:0;
+    }
+    .sloganBox h6{
+      padding:10px 0 15px 0;
+      font-size:40px;line-height:40px;color:#fff;
+    }
+    .inforWrap{
+      overflow:auto;
+      position:absolute;z-index: 40;
+      top:100%;bottom:0;left:0;right:0;margin:0 auto;
+      width:1070px;
+      text-align:center;
+      background:#fff;
+      transition:top 0.5s;
+    }
+    .INFO.infoWrap{
+      top:307px;
+    }
+    .infoWrap.slogan{
+      height:80px;margin-bottom:20px;
+      text-align:right;
+      background:url(./image/slogan.png)no-repeat 85px bottom;
+    }
+    .infoWrap.closeBtn{
+      display:inline-block;
+      margin:30px 30px 0 0;
+      height:48px;line-height:48px;
+      font-size:48px;color:#c4c4c4;font-weight: 100;
+    }
+    .paging_ver{
+      position:absolute;z-index: 50;bottom:0;
+      width:100%;
+      padding:0 0 50px 0;
+      text-align:center;
+    }
+  </style>
+  <!-- HEADER -->
+<header>
+  <div class = "header">
+    <!--logo-->
+    <a href="index.html" class = "logo">
+      <img src = "img/logo.png" alt = "로고이미지">
+    </a> 
+    <!--logo-->
+
+    <!--rightmenu-->
+    <div class = rightmenu>
+      <ul>
+        <li><a href = "#">LOGIN</a></li>
+        <li><a href = "#">APP 다운로드</a></li>
+        <li><a href = "#">예약확인</a></li>
+      </ul>
+    </div> 
+    <!--rightmenu-->
+
+    <!-- centermenu -->
+    <div class = "centermenu">
+      <ul>
+        <li class = "menu1"><a href = "roomlist.html" >ROOM</a></li>
+        <li class = "menu2"><a href = "reservation.html" >RESERVATION</a></li>
+        <li class = "menu3"><a href = "community.html" >COMMUNITY</a></li>
+        <li class = "menu4"><a href = "promotions.html" >PROMOTION</a></li>
+      </ul>
+    </div> 
+    <!-- centermenu -->
+  </div> <!--header-->
+
+    <!-- Layer Popup -->
+    <div id = "layer">
+      <img src = "img/logo.png">
+      <a href = "#" class = "close">Close</a>
+    </div>
+    <!-- Layer Popup -->
+</header>  
+  <div class="all_wrap ANI">
+    <a class="arrowBL" onclick="scrollObj.btnScroll('U')"></a>
+    <a class="arrowBR" onclick="scrollObj.btnScroll('D')"></a>
+    <div class="paging_ver">
+      <a onclick="scrollObj.btnScroll(0)"class="sel"></a>
+      <a onclick="scrollObj.btnScroll(1)"class></a>
+      <a onclick="scrollObj.btnScroll(2)"></a>
+      <a onclick="scrollObj.btnScroll(3)"></a>
+      <a onclick="scrollObj.btnScroll(4)"></a>    
+    </div>
+    <div class="sloganWrap">
+      <div class="sloganBox TRAN" style="transition-delay: 0.5s;transform:rotateY(90deg);">
+      
+    ROOM INFORMATION
+  <h6>풀빌라_01</h6>
+<a class="boxBtn" onclick="$('.all_wrap').addClass('INFO')">정보보기</a>
+<a class="boxBtn" href="comm.html?gubun=r&subBtnId=1">예약하기</a>
+<a class="boxBtn" href="rooms.html">룸미리보기</a>
+
+</div>
+  </div>
+  <div class="infoWrap">
+    <div class="slogan">
+      <a class="closeBtn"onclick="$('.all_wrap').removeClass('INFO')">X</a>
+    </div>
+    <ifrme width="990px" height="1000px"id="i_room" src="/inner/room/?biz code=p201706925&room no=115380"
+    frameborder="0"marginwidth="0"marginheight="0"scrolling="no"allowtransparency="true"topmargin="0"></ifrme>   
+  </div>
+  <div class="cpage" id="cp1" style="display:block; opacity:1;">
+  <div class="loader"style="background-image:url(./image/4.jpg);"></div>
+  </div>
+  <div class="cpage" id="cp2"style="display:none; opacity:1">
+  <div class="loader" style="background-image:url(.image/5.jpg);"></div>
+  </div>
+  <div class="cpage" id="cp3"style="display:none;">
+    <div class="loader" style="background-image:url(.image/6.jpg);"></div>
+    </div>
+</head>
+<body>
+  
+</body>
+</html>

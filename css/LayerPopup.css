@@ -1,0 +1,20 @@
+
+/* 레이어 팝업 */
+
+/* position: fixed;는 위치가 고정된다. box-shadow는 css3효과이다. */
+
+#layer {display: none; position: fixed; left: 50px; top: 50px; width: 700px; border: 10px solid #dceff7; box-shadow: 3px 3px 10px rgba(0,0,0,0.4);}
+
+/* display:block을 주면 이미지 아래 빈공간이 안생긴다. 이미지는 인라인 구조다. 거기에 폰트값이나 라인헤이트 값이 숨겨져 있어 공간을 차지하기 때문에 아래
+
+빈 공간이 생긴다.display:block을 줄수 없다면 height값을 주면 된다.(#layer에?) */
+
+#layer img {width: 100%; display: block;}
+
+/* position:absolute은 position: fixed 기준으로 위치 설정되는듯. color는 폰트컬러이다(#fff는 하얀색) */
+
+#layer .close {position:absolute; right: 20px; top: 20px; background: #0093bd; padding: 1px 6px; color: #fff;}
+
+#layer .close:hover {text-decoration: underline;}
+
+

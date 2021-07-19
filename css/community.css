@@ -1,3 +1,28 @@
+/* COMMON */
+.body_container {
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.wrap {
+  width: 1050px;   
+  margin: 0 auto;
+}
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+} 
+
+a {
+  text-decoration-line: none;
+}
+li {
+  list-style: none;
+}
+
+
 body {
   background: #fff
 }
@@ -9,11 +34,6 @@ body {
 }
 .btn:hover {
   background: #e2b679;
-}
-
-/* header */
-header {
-  height: 100px;
 }
 
 

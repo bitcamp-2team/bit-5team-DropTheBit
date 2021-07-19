@@ -1,0 +1,45 @@
+.header {
+    height : 90px;
+    background : #393f43;
+    position: relative;
+    z-index: 10;
+}
+
+.header .logo {
+   position: absolute;
+   z-index: 11;
+}
+
+.header .logo img {
+    padding-top:10px;
+    width: 80px;
+}
+
+.header .rightmenu {
+    float : right;
+    line-height : 28px;
+    margin-right : 20px;
+}
+
+.header .rightmenu ul li a {
+    color : #7e6956;
+}
+
+.header .centermenu {
+    position : absolute;
+    text-align : center;
+    word-spacing : 100px;
+    padding : 0 250px;
+}
+
+.header a {
+    color: #fff;
+}
+
+.centermenu ul li {
+    display : inline-block;
+    padding : 38px;
+}
+
+
+

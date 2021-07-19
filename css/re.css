@@ -1,0 +1,43 @@
+.concon {
+  width: 1330px;
+  background-color: #fff;
+  margin: auto;
+}
+.cpage {
+  position: relative;
+  /* background-color: #fff; */
+}
+.submenu {
+  width: 1330px;
+  padding-bottom: 60px;
+  
+}
+.box {
+  margin: 0 auto;
+  width: 1330px;
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: 1px;
+  background-color: #fff;
+}
+
+.img-j {
+  width: 1330px;
+  height: 60px;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.img0 {
+  width: 1330px;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+}
+.img1 {
+  width: 1330px;
+  height: 1500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+}

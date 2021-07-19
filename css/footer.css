@@ -1,0 +1,128 @@
+.footer{
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+    background : #393f43;
+    color : #a7adb2;
+}
+
+
+.footer .promotion ul li a { color : #a7adb2; }
+
+.footer .nav strong a { color : #fff; }
+
+.footer .nav {
+    text-align : center;
+    background-color : #80808002;
+    margin : 0 auto 30px;
+    margin-top : 45px;
+}
+
+.footer .nav .contact {
+    width : 300px;
+    line-height : 20px;
+    display : inline-block;
+    height : 160px;
+    vertical-align : top;
+}
+
+.footer .nav .contact .csTit {
+    display : inline-block;
+    width : 150px;
+    margin : 2px;
+    text-align : left;
+}
+
+.footer .nav .contact .csTxt { margin : 2px; }
+
+.footer .nav .promotion{
+    line-height : 20px;
+    width : 300px;
+    display : inline-block;
+    vertical-align : top;
+    height : 160px;
+}
+
+.footer .nav .promotion strong {
+    display : block;
+}
+
+.promotion ul { margin-bottom : 30px; }
+
+.footer .nav .account {
+    width : 300px;
+    line-height : 20px;
+    display : inline-block;
+    height : 160px;
+    vertical-align : top;
+}
+
+.footer .nav .account ul li {
+    line-height: 30px;
+}
+
+.footer .nav .account .csTit {
+    display : inline-block;
+    width : 110px;
+    margin : 2px;
+    text-align : left;
+}
+
+.footer .nav .account .csTxt { margin : 2px; }
+
+.footer .nav .time {
+    width : 300px;
+    line-height : 20px;
+    display : inline-block;
+    height : 160px;
+    vertical-align : top;
+}
+
+.footer .nav .time .csTit {
+    display : inline-block;
+    width : 130px;
+    margin : 3px;
+    text-align : left;
+}
+
+.footer .nav .time .csTxt { margin : 2px; }
+
+
+
+.footer .btm { 
+    margin : 0 auto; 
+    padding : 0 0 30px;
+}
+
+.footer .btm .info .info2 { margin-top : 10px; }
+
+.footer .btm .footerMenu {
+    padding : 0 0 15px 0;
+    text-align : left;
+    border-bottom : 1px solid #fff;
+}
+
+.footer .btm .info { margin-top : 15px; }
+
+.footer .btm .info strong { color : #fff; }
+
+.footer .btm .footerMenu ul li { display : inline-block; }
+
+.footer .btm .footerMenu ul li a { color : #a5bdcf; }
+
+.footer .farea {
+    position : absolute;
+    right : 50px;
+    bottom : 20px;
+}
+
+.footer .farea ul {
+    display : flex;
+    justify-content : space-around;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,122 @@
+.roomtype h3 {
+    font-size: 19px;
+    color : #64503e;
+}
+
+.roomtype2 h3 {
+    font-size: 19px;
+    color : #64503e;
+}
+
+.roomtype3 h3 {
+    font-size: 19px;
+    color : #64503e;
+}
+
+.mblock {
+    font-size : 22px;
+    color : #64503e;
+    font-weight : bold;
+    line-height : 1.5;
+}
+
+.roomtype img {
+    display : block;
+    width : 300px;
+    height : 200px;
+    margin : 20px 0;
+    border : 1px solid #cccdc6;
+}
+
+.roomtype2 img {
+    display : block;
+    width : 300px;
+    height : 200px;
+    margin : 20px 0;
+    border : 1px solid #cccdc6;
+}
+
+.roomtype3 img {
+    display : block;
+    width : 300px;
+    height : 200px;
+    margin : 20px 0;
+    border : 1px solid #cccdc6;
+}
+
+.roomtype strong {
+    height : 34px;
+    line-height : 18px;
+    font-size : 14px;
+    font-weight : bold;
+    color : #555;
+    overflow : hidden;
+}
+
+.roomtype2 strong {
+    height : 34px;
+    line-height : 18px;
+    font-size : 14px;
+    font-weight : bold;
+    color : #555;
+    overflow : hidden;
+}
+
+.roomtype3 strong {
+    height : 34px;
+    line-height : 18px;
+    font-size : 14px;
+    font-weight : bold;
+    color : #555;
+    overflow : hidden;
+}
+
+.txtspecial {
+    padding-bottom : 45px;
+    text-align: center;
+}
+
+.txtspecial p {
+    margin-top : 30px;
+    line-height: 25px;
+    font-size : 14px;
+    color : #555;
+    font-weight : bold;
+}
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+} 
+.special .roomtype {
+    padding-bottom: 0;
+}
+
+.roomtype {
+    position : relative;
+    float : left;
+    margin : 0 30px 75px 0;
+    width : 380px;
+    height : 370px;
+}
+
+.roomtype2 {
+    position : relative;
+    float : left;
+    margin : 0 30px 75px 0;
+    width : 380px;
+    height : 370px;
+}
+
+.roomtype3 {
+    position : relative;
+    float : left;
+    margin : 0 30px 75px 0;
+    width : 380px;
+    height : 370px;
+}
+
+.txt img {
+    width : 100%;
+    height : 400px;
+}

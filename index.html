@@ -1,79 +1,245 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <title>DROP THE BIT</title>
+  <title>Drop The Bit</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"> 
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href ="css/header.css">
+  <link rel="stylesheet" href ="css/LayerPopup.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/slide.css">
+ 
+<link rel="stylesheet" href="css/fullpage.min.css">
+<script src="js/fullpage.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+  
+  <script type="text/javascript" src="./jscript/plugin/jquery-1.10.2.min.js"></script>
+ 
 </head>
 <body>
-  <div class="body_container">
+<!-- HEADER -->
+<header>
+  <div class = "header">
+    <!--logo-->
+    <a href="index.html" class = "logo">
+      <img src = "img/logo.png" alt = "로고이미지">
+    </a> 
+    <!--logo-->
 
-    <!-- HEADER -->
-    <header>
-      <div class="wrap">
-        <ul class="main-menu">
-          <li class="roomlist"><a href="roomlist.html">룸리스트</a></li>
-          <li class="community"><a href="community.html">커뮤니티</a></li>
-        </ul>
-      </div>
-      <ul class="sub-menu">
-        <li class="reserve">예약<a href="reserve.html"></a></li>
-        <li class="login">로그인<a href=""></a></li>
+    <!--rightmenu-->
+    <div class = rightmenu>
+      <ul>
+        <li><a href = "#">LOGIN</a></li>
+        <li><a href = "#">APP 다운로드</a></li>
+        <li><a href = "#">예약확인</a></li>
       </ul>
-    </header>
-    <!-- MAIN_PAGE -->
-    <section class="main_container">
-      <article class="main-section">메인 페이지</article>
-      <article class="placeRoomlist">룸리스트 공간</article>
-    </section>
-    <!-- FOOTER -->
-    <footer>
-      <div class = "footer">
-        <div class = "nav">
-            <div class = "about">
-              <strong>ABOUT HOTEL</strong>
-                <ul class = "aboutmain">
-                  <li>업체명</li>
-                  <li>대표자명</li>
-                  <li>사업자등록번호</li>
-                  <li>이메일</li>
-                  <li>연락처</li>
-                  <li>주소</li>
-                  <a href = "#">지도</a>
-                </ul>
-            </div> <!--contact--> 
-            <div class = "promotion">
-              <strong>PROMOTION</strong>
-                <ul>
-                  <a href = "#">PACKAGES&PROMOTION</a>
-                </ul>
-            </div> <!--promotion-->
-            <div class = "reservation">
-              <a href = "reserve.html">RESERVATIOM</a>
-            </div> <!--reservation-->
-            <div class = "event">
-              <a href = "#">EVENT</a>
-            </div> <!--event-->
-            <div class = "contact">
-              <strong>CONTACT</strong>
-                <ul class = "contactmain">
-                  <li>MANAGEMER : 박용석 - 010 1111 2222</li>
-                  <li>MANAGEMER : 김효미 - 010 3333 4444</li>
-                  <li>MANAGEMER : 이세은 - 010 5555 6666</li>
-                  <li>MANAGEMER : 남승옥 - 010 3386 7124</li>
-                  <li>MANAGEMER : 김형태 - 010 7777 8888</li>
-                </ul>  
-            </div>
-        </div> <!--nav-->
-      </div> <!--footter-->
+    </div> 
+    <!--rightmenu-->
 
-  </div> <!--body_container끝 -->
+    <!-- centermenu -->
+    <div class = "centermenu">
+      <ul>
+        <li class = "menu1"><a href = "roomlist.html" >ROOM</a></li>
+        <li class = "menu2"><a href = "reservation.html" >RESERVATION</a></li>
+        <li class = "menu3"><a href = "community.html" >COMMUNITY</a></li>
+        <li class = "menu4"><a href = "promotions.html" >PROMOTION</a></li>
+      </ul>
+    </div> 
+    <!-- centermenu -->
+  </div> <!--header-->
+
+    <!-- Layer Popup -->
+    <div id = "layer">
+      <img src = "img/logo.png">
+      <a href = "#" class = "close">Close</a>
+    </div>
+    <!-- Layer Popup -->
+</header>  
+
+<div id="full-page">
+	<div class="section s0">
+	  <!-- Swiper -->
+	  <div class="swiper-container mySwiper">
+		
+		<div class="txt-box-wrap has_textshadow2">
+			<p id="dynamic" class="lg-text"></p>
+		  </div>
+		  <script src="js/typing.js"></script>
+		<div class="swiper-wrapper">
+		  
+		  <div class="swiper-slide">
+			  <img src="./img/main/7.jpg" alt="">
+		  </div>
+		  <div class="swiper-slide">
+			  <img src="./img/main/9.jpg" alt="">
+		  </div>
+		  <div class="swiper-slide">
+			  <img src="./img/main/3.jpg" alt="">
+		  </div>
+		  <div class="swiper-slide">
+			  <img src="./img/main/14.jpg" alt="">
+		  </div>
+		  <div class="swiper-slide">
+			  <img src="./img/main/5.jpg" alt="">
+		  </div>
+		  <div class="swiper-slide">
+			  <img src="./img/main/6.jpg" alt="">
+		  </div>
+		</div>
+	   
+		<div class="swiper-button-next"></div>
+	   
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-pagination"></div>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+		
+		<script src="js/swipe.js"></script>
+	  </div>
+	</div>
+	
+	<!-- cp2_1 -->
+<div class="section s1">
+	<div class="cpage">
+		<div class="loader"><img src="./img/main/cp2_1.jpg" style="width:100%;"></div>
+	</div>
+</div>
+
+
+	<!-- cp2 -->
+<div class="section s2">
+	<div class="cpage" id="cp2">
+		<!-- 180802 동영상추가 -->
+		<div class="line">
+			<div class="content" style="background:#e5e5e5;">
+				<img src="./img/main/cpMslogan.png" alt="">
+			</div>
+			<div class="movieWrap">
+				<iframe id="playerDiv1" src=" https://www.youtube.com/embed/B4QgXpysrrE?feature=player_detailpage;wmode=transparent;amp;autoplay=1;rel=0;loop=10;showinfo=0;start=0;autohide=1;enablejsapi=1;Description=1;controls=0;vq=highres" type="text/html" frameborder="0" width="100%" height="100%" allow="autoplay"></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+  <div class = "footer">
+    <!--farea-->
+    <div class = "farea">
+      <ul>
+        <div style = "color : hotpink">
+          <i class="fab fa-instagram fa-3x fa-spin"></i>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;
+        <div style = "color : blue">
+          <i class = "fab fa-facebook-square fa-3x fa-spin"></i>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;
+        <div style = "color : green">
+          <i class = "fab fa-line fa-3x fa-spin"></i>
+        </div>
+      </ul>    
+    </div> <!--farea-->  
+
+    <div class = "nav">
+        <!--time-->
+        <div class = "time">
+          <strong><a>TIME IN SERVICE (식사시간시 미운영)</a></strong><br><br>
+          <span class = "csTit">고객센터</span>
+          <span class = "csTxt">AM 09 : 00 ~ 20 : 00</span><br>
+          <span class = "csTit">점심시간</span>
+          <span class = "csTxt">PM 12 : 00 ~ 13 : 00</span><br>
+          <span class = "csTit">저녁시간</span>
+          <span class = "csTxt">PM 17 : 00 ~ 18 : 00</span><br><br>
+        </div><!--time-->
+
+        <!--promotion--> 
+        <div class = "promotion">
+          <strong><a href = "#">PROMOTION</a></strong>
+          <ul>
+            <li><a href = "promotions.html" target = "_blank">Promotion&Package</li>
+            <li><a href = "promotions.html" target = "_blank">Event</a></li>
+          </ul>
+          <strong><a href = "#">RESERVATION</a></strong>
+          <ul><li>Reservation</li></ul>
+        </div> <!--promotion-->
+
+        <!--account-->
+        <div class = "account">
+          <strong><a>ACCOUNT (예금주 : 남승옥)</a></strong><br><br>
+          <span class = "csTit">국민은행</span>
+          <span class = "csTxt">1234 5678 0000</span><br>
+          <span class = "csTit">농협은행</span>
+          <span class = "csTxt">9876 5432 1000</span><br>
+          <span class = "csTit">기업은행</span>
+          <span class = "csTxt">5555 4444 9999</span><br>
+          <span class = "csTit">우리은행</span>
+          <span class = "csTxt">7774 6548 7894</span><br>
+        </div> <!--account-->
+
+        <!--contact-->
+        <div class = "contact">
+          <strong><a>CONTACT</a></strong><br><br>
+          <span class = "csTit">대표전화</span>
+          <span class = "csTxt">010 3386 7124</span><br>
+          <span class = "csTit">팩스</span>
+          <span class = "csTxt">010 3386 7124</span><br>
+          <span class = "csTit">당직 지배인</span>
+          <span class = "csTxt">010 3386 7124</span><br>
+          <span class = "csTit">고객센터</span>
+          <span class = "csTxt">010 3386 7124</span><br>
+        </div> <!--contact-->
+    </div> <!--nav-->
+
+    <!--btm-->
+    <div class = "btm">
+      <div class = "footerMenu">
+        <ul class = "menuBox">
+          <li><a href = "#" class = "a">공지사항 |</a></li>
+          <li><a href = "#" class = "b">개인정보 처리방침 |</a></li>
+          <li><a href = "#" class = "c">예약취소에 따른 위약금 규정</a></li>
+        </ul>
+      </div> <!--fotterMenu-->
+
+      <div class = "info">
+        <div>
+          호텔명 <strong style = "margin-right : 15px;">비트캠프</strong>
+          주소 <strong style = "margin-right : 15px;">서울특별시 강남구 강남대로94길 20 삼오빌딩 5-9층</strong>
+          대표자명 <strong style = "margin-right : 15px;">남승옥</strong>
+          이메일 <strong style = "margin-right : 15px;">qqkddi09@naver.com</strong><br>
+        </div>
+        <div class = "info2">
+          사업자등록번호 <strong style = "margin-right : 15px;">229-88-1111</strong>
+          통신판매업신고번호 <strong>제2017-충북제천-0024호</strong>
+        </div>
+      </div> <!--info-->
+    </div> <!--btm-->
+  </div> <!--footter-->
+</footer>
+
+<!-- Layer Popup-->
+<script src = "js/APP.js"></script>
+<!-- Layer Popup -->
+
+
+<script>
+	new fullpage('#full-page',{});
+</script>
 </body>
 </html>
